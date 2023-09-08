@@ -1,0 +1,100 @@
+:root{
+    --backgroundColor:rgb(246, 216, 174);
+    --buttonr: rgb(160,158,187);
+    --buttonClicked: rgb(69,66,90);
+    --accentOne: rgb(240,100,73);
+    --accentTwo: rgb(164,22,35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    background-color: var(--backgroundColor);
+}
+
+header{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+header div{
+    display: flex;
+    gap: 10px;
+}
+
+header div h2{
+    font-size: 3em;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+main{
+    display: grid;
+    background-color: var(--accentOne);
+    width: 100vw;
+    justify-content: center;
+
+}
+
+#welcome-text{
+    width: 100vw;
+    text-align: center;
+    color: #e4e1e1;
+}
+
+#logo{
+    height: 50px;
+}
+
+#mainnamediv{
+    display: grid;
+}
+
+.socialsLinks a img{
+  height: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+    header{
+        display: grid;
+        justify-content: center;        
+    }
+
+    header img{
+        display: none;
+    }
+
+    ul li{
+        font-size: 2em;
+    }
+
+    #mainnamediv div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainnamediv div h2{
+    font-size: 2em;
+    }
+
+    #mainnamediv p{
+        display: none;
+    }
+
+}
