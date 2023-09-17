@@ -1,15 +1,21 @@
 :root{
-    --backgroundColor:rgb(246, 216, 174);
-    --buttonr: rgb(160,158,187);
-    --buttonClicked: rgb(69,66,90);
-    --accentOne: rgb(240,100,73);
-    --accentTwo: rgb(164,22,35);
+    --backgroundColor:#044231;
+    --colorA: #8FFFA3;
+    --colorB: #73FA8C;
+    --colorC: #AD001F;
+    --colorD: #FA738B;
+
+    --text: #faf9ec;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    all: unset;
 }
 
 body{
@@ -19,10 +25,11 @@ body{
 
 header{
     width: 100vw;
-    
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+    padding-bottom: 10px;
 }
 
 header div{
@@ -30,43 +37,51 @@ header div{
     gap: 10px;
 }
 
-header div h2{
-    font-size: 3em;
-}
-
 ul li{
+    color: var(--text);
     display: inline;
     list-style: none;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     margin: 10px;
 }
 
 main{
     display: grid;
-    background-color: var(--accentOne);
+    background-color: var(--colorC);
     width: 100vw;
     justify-content: center;
-
 }
 
-#welcome-text{
-    width: 100vw;
+.mainName{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.welcome-text{
+    font-size: 4em;
+    font-style: oblique;
+    color: var(--text);
     text-align: center;
-    color: #e4e1e1;
+    font-family: 'Bungee', cursive;
 }
 
-#logo{
-    height: 50px;
-}
-
-#mainnamediv{
-    display: grid;
+.welcome-text + h1 {
+    font-size: 1em;
+    color: var(--text)
 }
 
 .socialsLinks a img{
   height: 20px;
 }
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 600px){

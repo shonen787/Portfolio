@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bungee&display=swap" rel="stylesheet">
+   
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div id="mainnamediv">
-            <div id="personalName">
-                <a href="index.html" tabindex="0"><img src="./assets/00000.svg" alt="Logo of a shark singing. A Shark Bard." id="logo"  ></a>
-                <h2> Chris Sanchez </h2>
-                
-            </div>
-            <p>shonen787@gmail.com</p>
-
-        </div>
-
-        <div>
             <ul>
-                <li tabindex="0">About</li>
-                <li tabindex="0">Blog</li>
-                <li tabindex="0">Contact</li>
+                <li tabindex="0"><a href="">About</a></li>
+                <li tabindex="0"><a href="">Projects</a></li>
+                <li tabindex="0"><a href="">Contact</a></li>
             </ul>
-         </div>
+
     </header>
     <main>
-        <h1 id="welcome-text">Welcome, Dear Traveler</h1>
+        <div id="mainName">
+            <h1 class="welcome-text">Christopher Sanchez</h1>
+            <h1>Former CyberSec professional, looking to build up software rather than tear down</h1>
+        </div>
+        <div id="Projects">
+
+        </div>
+        <div id="Contact">
+            <form name="input-form" class="kwes-form" action="https://kwesforms.com/api/foreign/forms/G70HlXEuaHkFEdhTYp9Y">
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name" />
+
+                <label for="email">Your Email</label>
+                <input name="email" type="email" rules="required|max:255|email" placeholder="johndoe@me.com"/>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
     </main>
     
     <footer>
-                <div class="socialsLinks">
-                    <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/x-light.png"></a>
-                    <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/github-light.png"></a>
-                    <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/linkedin.png"></a>
-                </div>
+        <p>So, What Do You Say? Why Not Help One Another On This Lonely Journey? --Solaire</p>
+        <div class="socialsLinks">
+            <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/x-light.png"></a>
+            <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/github-light.png"></a>
+            <a><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/linkedin.png"></a>
+            <p>shonen787@gmail.com</p>
+        </div>
     </footer>
     
 </body>
+<script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
 </html>
