@@ -14,30 +14,48 @@
 <body>
     <header>
             <ul>
-                <li tabindex="0"><a href="">About</a></li>
-                <li tabindex="0"><a href="">Projects</a></li>
-                <li tabindex="0"><a href="">Contact</a></li>
+                <li tabindex="0"><a href="#About">About</a></li>
+                <li tabindex="0"><a href="#Projects">Projects</a></li>
+                <li tabindex="0"><a href="#Contact">Contact</a></li>
             </ul>
 
     </header>
     <main>
         <div id="mainName">
             <h1 class="welcome-text">Christopher Sanchez</h1>
-            <h1>Former CyberSec professional, looking to build up software rather than tear down</h1>
+            <h1>Crafting software with a CyberSec edge:</h1><h1>Building up, not tearing down</h1>
+            <img src="assets/hero.jpg" id="hero" alt="photo of Christopher Sanchez looking at the corner">
         </div>
         <div id="Projects">
+            <h2>Projects</h2>
 
         </div>
+        <div id="About">
+            <h2> About Me</h2>
+            <div id="imageholder">
+                <img src="assets/main_image.jpg" id="mainimage">
+            </div>  
+        </div>
         <div id="Contact">
+            <h2>Contact Me</h2>
+            
             <form name="input-form" class="kwes-form" action="https://kwesforms.com/api/foreign/forms/G70HlXEuaHkFEdhTYp9Y">
-                <label for="name">Your name</label>
-                <input type="text" name="name" id="name" />
+                <label for="name">Name <span class="required_input">*</span></label>
+                <input type="text" name="name" id="name" rules="required|alpha" placeholder="John Doe"/>
 
-                <label for="email">Your Email</label>
+                <label for="phonenumber">Phone number</label>
+                <input type="text" name="phonenumber" id="phonenumber" rules="numeric" placeholder="55555555555 (No dashes)"/>
+
+                <label for="email">Email <span class="required_input">*</span></label>
                 <input name="email" type="email" rules="required|max:255|email" placeholder="johndoe@me.com"/>
+
+                <label for="message">Message</label>
+                <textarea name="message" type="text" placeholder="You can enter a message here" rules="max:255" id="inputmessage"></textarea>
+                
 
                 <button type="submit">Submit</button>
             </form>
+            
         </div>
 
     </main>
