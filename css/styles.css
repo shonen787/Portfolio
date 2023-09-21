@@ -1,5 +1,5 @@
-:root{
-    --backgroundColor:#044231;
+:root {
+    --backgroundColor: #044231;
     --colorA: #8FFFA3;
     --colorB: #73FA8C;
     --colorC: #AD001F;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -35,15 +35,15 @@ ul li {
     margin: 10px;
 }
 
-ul li:hover{
+ul li:hover {
     color: var(--colorC);
 }
 
-label{
+label {
     color: var(--text);
     font-size: larger;
     font-style: oblique;
-        font-family: 'Bungee', cursive;
+    font-family: 'Bungee', cursive;
 
 }
 
@@ -51,7 +51,7 @@ a {
     all: unset;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: var(--backgroundColor);
@@ -65,7 +65,7 @@ h2 {
     color: var(--text);
 }
 
-#mainName{
+#mainName {
     /* flex-grow: 1; */
     display: flex;
     width: 100%;
@@ -79,14 +79,14 @@ h2 {
 
 }
 
-#hero{
+#hero {
     object-fit: contain;
     height: 40vh;
-    max-width: 70%;    
+    max-width: 70%;
 }
 
 
-.welcome-text{
+.welcome-text {
     font-size: 4em;
     font-style: oblique;
     text-align: center;
@@ -100,13 +100,13 @@ h1 {
     color: var(--text)
 }
 
-#Contact{
+#Contact {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.kwes-form{
+.kwes-form {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -115,14 +115,14 @@ h1 {
     border-radius: 5px;
     padding: 7px;
     filter: drop-shadow(0px 0px 50PX black);
-    
+
 }
 
-.socialsLinks a img{
-  height: 20px;
+.socialsLinks a img {
+    height: 20px;
 }
 
-#Projects{
+#Projects {
     height: 100vh;
 }
 
@@ -131,42 +131,42 @@ h1 {
     background-color: #082920;
 }
 
-#Contact{
+#Contact {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 20px
 }
 
 
-#imageholder{
+#imageholder {
     border-radius: 100%;
     height: 500px;
     width: 500px;
-    overflow:hidden;
+    overflow: hidden;
     background-color: red;
-    
+
 }
 
 #mainimage {
     width: 100%;
     height: 100%;
     object-fit: cover;
- }
+}
 
- #inputmessage{
+#inputmessage {
     height: 100px;
- }
+}
 
- .required_input{
+.required_input {
     color: red;
     font-size: 10px;
-    
- }
+
+}
 
 
-footer{
+footer {
     background-color: #082920;
 }
 
@@ -174,25 +174,27 @@ footer{
 
 
 
-@media only screen and (max-width: 600px){
-    h2, .welcome-text {
+@media only screen and (max-width: 600px) {
+
+    h2,
+    .welcome-text {
         font-size: 2em;
     }
 
-    header{
+    header {
         display: grid;
-        justify-content: center;        
+        justify-content: center;
     }
 
-    header img{
+    header img {
         display: none;
     }
 
-    ul li{
+    ul li {
         font-size: 2em;
     }
 
-    #mainnamediv div{
+    #mainnamediv div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -200,19 +202,19 @@ footer{
 
 
 
-    #mainnamediv p{
+    #mainnamediv p {
         display: none;
     }
 
-    #imageholder{
+    #imageholder {
         display: none;
     }
 
-    .kwes-form{
+    .kwes-form {
         width: 300px;
     }
 
-    label{
+    label {
         font-size: .8em;
     }
 
@@ -220,8 +222,8 @@ footer{
 
 }
 
-@media only screen and (max-width: 1280px){
-    #imageholder{
+@media only screen and (max-width: 1280px) {
+    #imageholder {
         display: none;
     }
 }
